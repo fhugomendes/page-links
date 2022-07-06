@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    --bg-color: #EDF2FF;
+    --font-color: white;
+    --font-color-dark: #00082F;
+    --text-bg: #4263EB;
+    --text-bg-hover: #364FC7;
+}
+
+body.dark-blue {
+    --bg-color: #00082F;
+    --font-color: white;
+    --font-color-dark: #EDF2FF;
+    --text-bg: #4263EB;
+    --text-bg-hover: #364FC7;
+}
+
+body.pink{
+    --bg-color: #FFF0F6;
+    --font-color: white;
+    --font-color-dark: #1F000B;
+    --text-bg: #D6336C;
+    --text-bg-hover: #A61E4D;
+}
+
+body.dark-pink {
+    --bg-color: #1F000B;
+    --font-color: white;
+    --font-color-dark: #FFF0F6;
+    --text-bg: #D6336C;
+    --text-bg-hover: #A61E4D;
+}
+
+body {
+    background-color: var(--bg-color);
+    text-align: center;
+    margin-inline: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+div {
+    width: 300px;
+    margin: 60px auto 0;
+}
+
+img {
+    border-radius:  50%;
+    width: 100%;
+    border: 4px solid var(--text-bg);
+    padding: 3.7px;
+}
+
+#avatar {
+    width: 100px;
+    height: 100px;
+}
+
+div h1 {
+    padding: 24px 0px 8px;
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--font-color-dark);
+}
+
+#arroba {
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--font-color-dark);
+    opacity: 0.8;
+}
+
+ul {
+    list-style: none;
+    margin: 48px 0 32px;
+}
+
+li {
+    background: var(--text-bg);
+    border-radius: 6px;
+    transition: background 300ms;
+}
+
+li:hover {
+    background: var(--text-bg-hover);
+}
+
+ul li a {
+    height: 53px;
+    color: var(--font-color);
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--font-color-dark);
+    opacity: 0.8;
+}
+
+footer p a{
+    text-decoration: none;
+    color: var(--font-color-dark);
+    transition: opacity 400ms;
+    opacity: 0.8;
+}
+
+footer p a:hover{
+    opacity: 1;
+}
